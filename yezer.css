@@ -1,0 +1,76 @@
+body {
+	background-position: center;
+	background: url(https://cdn.wallpapersafari.com/75/96/IDYP5E.gif) repeat;
+	margin: 0;
+	background-size: cover;
+}
+
+.center {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+button{
+    display: block;
+    position: absolute;
+}
+
+/*.center p {
+	font-size: 35px;
+	text-align: center;
+}*/
+
+.textGani {
+    width: 200%;
+    margin-top: 120px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 50px;
+	text-align: center;
+    color: rgb(242, 207, 255);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(28, 0, 73);
+
+	transform: scale(1);
+	animation: pulse 2s infinite;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.heart {
+	/*border: 5px solid;
+	background: url(200.gif) 100% /20px no-repeat;*/
+	margin: 5px;
+	width: 450px;
+	height: 450px;
+	background: url(200w.gif)no-repeat;
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		text-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		text-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
